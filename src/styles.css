@@ -1,0 +1,23 @@
+.link{
+  color:#fff;
+  position:relative;
+ 
+  text-decoration:none;
+  transition:.3s;
+}
+
+.link::after {
+  content:'';
+  position:absolute;
+  z-index:-1;
+  inset:92% 0 0 0;
+  background:#ff0055;
+  transition:.3s;
+}
+.link:hover{
+  color:#fff;
+}
+
+.link:hover::after {
+  inset:0 0 0 0;
+}
