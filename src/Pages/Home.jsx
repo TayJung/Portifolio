@@ -18,6 +18,9 @@ const Home = () => {
         <S.H2>
           <TextAnimation />
         </S.H2>
+        <>
+        <a href='https://drive.google.com/file/d/1SI4ojJSCKYkJH5oWD2GqHFbcDQp6RkuB/view?usp=sharing'>Download Curriculum</a>
+        </>
       </S.Box>
       <>
         <S.Image src={Image} alt="" />
