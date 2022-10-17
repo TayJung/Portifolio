@@ -1,7 +1,9 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import * as S from "../Styles/styleContact";
-import Image from "../Assets/ImageHeader/logoResponsive.png";
+
+import LogoAnimation from "../Pages/logoAnimation";
+import { BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs";
 
 export default function Contact() {
   const form = useRef();
@@ -23,7 +25,6 @@ export default function Contact() {
         (error) => {
           console.log(error.text);
         }
-      
       );
   };
   return (
@@ -44,9 +45,43 @@ export default function Contact() {
           <S.Btn type="submit" value="Send" />
         </S.Form>
       </S.BoxForm>
-      <S.BoxImage>
-        <S.Image src={Image} />
-      </S.BoxImage>
+      <S.Box>
+        <S.BoxImage>
+          <LogoAnimation />
+        </S.BoxImage>
+        <S.BoxContact>
+          <S.Address>
+            <p>tay.jung29@gmail.com</p>
+            <p>+55 51 99402 7072</p>
+          </S.Address>
+          <S.BoxRedes>
+            <S.A
+              href="https://www.instagram.com/tay.jung_code/"
+              target="blank"
+              alt="link do instagram"
+              title="Instagram"
+            >
+              <BsInstagram />
+            </S.A>
+            <S.A
+              href="https://github.com/TayJung"
+              target="blank"
+              alt="link do github"
+              title="Github"
+            >
+              <BsGithub />
+            </S.A>
+            <S.A
+              href="https://www.linkedin.com/in/tayjung29/"
+              target="blank"
+              alt="link do linkedin"
+              title="Linkedin"
+            >
+              <BsLinkedin />
+            </S.A>
+          </S.BoxRedes>
+        </S.BoxContact>
+      </S.Box>
     </S.ContainerContact>
   );
 }
