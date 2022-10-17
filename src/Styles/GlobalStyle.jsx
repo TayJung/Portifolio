@@ -12,6 +12,17 @@ body{
   width:100%;
   height:100vh;
   background: #000;
+  &::-webkit-scrollbar{
+    width: 1vw;
+  }
+  &::-webkit-scrollbar-track{
+    background:#1C1C1C;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color:#696969;
+    border-radius:1em;
+    border:3px solid #1C1C1C;
+  }
 }
 `;
 // background: #191970;
