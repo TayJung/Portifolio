@@ -33,15 +33,17 @@ export default function Contact() {
         <S.Form ref={form} onSubmit={sendEmail}>
           <S.Title>Contact me</S.Title>
           <S.Label>Name</S.Label>
-          <S.Input type="text" name="user_name" placeholder="Type your name" />
+          <S.Input type="text" name="user_name" placeholder="Type your name" required/>
           <S.Label>Email</S.Label>
           <S.Input
             type="email"
             name="user_email"
             placeholder="Type your e-mail"
+            required
           />
           <S.Label>Message</S.Label>
-          <S.Textarea name="message" placeholder="Type your message" />
+          <S.Textarea name="message" placeholder="Type your message" 
+          required/>
           <S.Btn type="submit" value="Send" />
         </S.Form>
       </S.BoxForm>
