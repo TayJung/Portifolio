@@ -34,7 +34,7 @@ transform: translateZ(40px) scale(0.9);
 @media only screen and (min-width: 320px) and (max-width: 500px){
   width:35vw;
   height:65vh;
-  margin-top:7em;
+  margin-top:0em;
 }
 `;
 

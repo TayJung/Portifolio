@@ -42,8 +42,8 @@ width:25vw;
 height:51.8vh;
 animation:${Image} 10s ease-in-out infinite;
 @media only screen and (min-width: 320px) and (max-width: 800px){
-  width:84vw;
-  height:60vh;
+  width:100%;
+  height:100%;
 }
 `;
 

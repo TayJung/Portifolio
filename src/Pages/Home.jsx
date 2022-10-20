@@ -82,7 +82,10 @@ const Home = () => {
             <BsLinkedin />
           </S.A>
         </S.BoxRedesResponsive>
+        <S.Figure>
         <S.Image src={Image} alt="imagem de Taise Jungthon" title="Tay Jung" />
+        </S.Figure>
+        
       </S.BoxTwo>
     </S.Container>
   );

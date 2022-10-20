@@ -43,10 +43,27 @@ font-size:2em;
 }
 `;
 export const Image = Styled.img`
-width:20vw;
+width:17vw;
+height:82vh;
+object-fit:cover;
 @media only screen and (min-width: 320px) and (max-width: 800px){
-width:28%;
+  width:28vw;
+  height:40vh;
 }
+`;
+
+export const Figure = Styled.figure`
+
+width:100%;
+height:100%;
+@media only screen and (min-width: 320px) and (max-width: 800px){
+width:50%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
 `;
 
 export const Link = Styled.a`
@@ -114,7 +131,8 @@ text-decoration:none;
 export const BoxTwo = Styled.section`
 display:flex;
 align-items:center;
-
+width:18%;
+height:84vh;
 
  @media only screen and (min-width: 320px) and (max-width: 800px){
   justify-content:space-between;
